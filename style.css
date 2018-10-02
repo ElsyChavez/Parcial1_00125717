@@ -90,14 +90,95 @@ body{
     width: 100%;
 }
 
+
+
+
 .seccion1{
     grid-area: seccion1;
+    background-color: #ffffff;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin: 5px auto;
 }
 
-.header{
+.contenido1{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 10px;
+    width: 100%;
+    align-content: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+    ". section1 section2 section3 ."
+    ". section4 section5 section6 .";
+    grid-gap:1.5em;
+}
+
+.feature{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.boton1{
+
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+.section4{
+    grid-area: section4;
+}
+
+.section5{
+    grid-area: section5;
+}
+
+.section6{
+    grid-area: section6;
+}
+
+
+.seccion2{
     grid-area: seccion2;
+    background-image: url("img/contacus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
-.seccion1{
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-template-areas:
+    "inputs contacto";
+    grid-gap:1.5em;
+}
+
+.inputs{
+    grid-area: inputs;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.footer{
     grid-area: footer;
 }
