@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.grid-container{
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-areas:
+    "header"
+    "seccion1"
+    "seccion2"
+    "footer"
+}
+
+.header{
+    grid-area: header;
+    background-image: url("img/concierto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*diseno de nav y barra de arriba*/
+.barra nav ul{
+    display: inline;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.barra nav ul li{
+    display: inline;
+}
+
+.barra nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navegador ul li a:hover{
+    color: pink;
+    cursor: pointer;
+}
+
+.navegador{
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 30px;
+}
+
+.encabezado{
+    text-transform: capitalize;
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    font-weight: 300;
+}
+
+/*posicionar el header hasta arriba del div*/
+.encabezado header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.seccion1{
+    grid-area: seccion1;
+}
+
+.header{
+    grid-area: seccion2;
+}
+
+.seccion1{
+    grid-area: footer;
+}
