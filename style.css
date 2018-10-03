@@ -4,7 +4,7 @@
 }
 
 body{
-
+    font-family:'Raleway', sans-serif;
 }
 
 .grid-container{
@@ -49,7 +49,7 @@ body{
     color:#ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 7em;
 }
 
 .barra{
@@ -57,8 +57,9 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: black;
+    padding-bottom: 0.5em;
 }
 
 .navegador ul li a:hover{
@@ -71,7 +72,7 @@ body{
 }
 
 .logo{
-    width: 30px;
+    width: 40px;
 }
 
 .encabezado{
@@ -90,8 +91,20 @@ body{
     width: 100%;
 }
 
+.header h1{
+    color: #ffffff;
+    font-family: 'Monoton', cursive;
+    font-size: 7em;
+}
 
+.titulo{
+    text-align: center;
+}
 
+.titulo h4{
+    color: #ffffff;
+    padding-bottom: 1em;
+}
 
 .seccion1{
     grid-area: seccion1;
@@ -118,10 +131,27 @@ body{
 .feature{
     width: 100%;
     border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+.seccion1 h2{
+    padding-bottom: 1em;
+}
+
+.seccion1 p{
+    padding-bottom: 1em;
 }
 
 .boton1{
-
+    width:100%;
+    text-align: center;
+    background-color: #e6a52e;
+    color: #ffffff;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
 }
 
 .section1{
@@ -162,10 +192,10 @@ body{
 
 .formulario{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:10px 1fr 1fr 10px;
     width: 100%;
     grid-template-areas:
-    "inputs contacto";
+    ". inputs contacto .";
     grid-gap:1.5em;
 }
 
@@ -181,4 +211,123 @@ body{
 
 .footer{
     grid-area: footer;
+    background-color: black;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
 }
+
+.final{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    width: 100%;
+    grid-template-areas:
+    ". icons links .";
+    grid-gap:1.5em;
+}
+
+.icons{
+    grid-area: icons;
+}
+
+.links{
+    grid-area: links;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer h3{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.icons ul, .links ul{
+    padding-left: 0.6em;
+}
+
+label{
+    color:#ffffff;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+
+.input, .area{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 5px;
+}
+
+.input::placeholder{
+    padding-left: 1em;
+    font-size: 1em;
+}
+
+.area{
+    resize: none;
+    height: 14em;
+}
+
+.inputs button{
+    margin-top: 1em;
+}
+
+.contacto{
+    color: white;
+    padding-right: 2em;
+}
+
+.contacto h2{
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 760px){
+    .contenido1{
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        width: 100%;
+        grid-template-areas:
+        ". section1 ."
+        ". section2 ."
+        ". section3 ."
+        ". section4 ."
+        ". section4 ."
+        ". section6 .";
+        grid-gap:1.5em;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .formulario{
+        display: grid;
+        grid-template-columns:10px 1fr 10px;
+        width: 100%;
+        grid-template-areas:
+        ". inputs ."
+        ". contacto .";
+        grid-gap:1.5em;
+    }        
+}
+
+@media screen and (max-width: 760px){
+    .final{
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        width: 100%;
+        grid-template-areas:
+        ". icons ."
+        ". links .";
+        grid-gap:1.5em;
+    }
+}
+
+
+
+
