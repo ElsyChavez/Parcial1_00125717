@@ -17,6 +17,7 @@ body{
     "footer"
 }
 
+
 .header{
     grid-area: header;
     background-image: url("img/concierto.jpg");
